@@ -85,7 +85,7 @@ unsigned int tabspaces = 4;
 /* bg opacity */
 unsigned int alpha = 0xed;
 
-#include "/home/schul/.cache/wal/colors-wal-st.h"
+#include "/home/shane/.cache/wal/colors-wal-st.h"
 
 
 /*
@@ -182,6 +182,7 @@ static char *openurlcmd[] = { "/bin/sh", "-c",
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
+        { TERMMOD,              XK_Escape,      keyboard_select, { 0 }    },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
